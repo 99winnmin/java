@@ -7,5 +7,8 @@ public class StudentTest2 {
 
         Student2 studentKim = new Student2(991216, "kim", 3);
         System.out.println(studentKim.showStudentInfo());
+
+        OrderInfo order1 = new OrderInfo("seoul");
+        System.out.println(order1.showOrderInfo(studentKim.studentName));
     }
 }
