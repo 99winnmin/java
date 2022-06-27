@@ -16,5 +16,8 @@ public class StudentTest {
         studentKim.address = "seoul-gangnam";
 
         studentKim.showStudentInfo();
+        //JVM이 준 가상 메모리 주소 출력
+        System.out.println(studentKim);
+        System.out.println(studentRyu);
     }
 }
