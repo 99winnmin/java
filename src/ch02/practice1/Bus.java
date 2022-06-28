@@ -1,4 +1,4 @@
-package practice1;
+package ch02.practice1;
 
 public class Bus {
     int busNumber;
