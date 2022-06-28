@@ -30,6 +30,37 @@ public class BirthDay {
         }
         else{
             this.month = month;
+            //switch 구버전
+            /*switch (month) {
+                case 1: case 3: case 5: case 7: case 8:
+                case 10: case 12:
+                    setDay(31);
+                    break;
+                case 4: case 6: case 9: case 11:
+                    setDay(30);
+                    break;
+                case 2:
+                    setDay(29);
+                    break;
+                default:
+                    break;
+            }*/
+            //switch 신버전(~java 14)
+            int day = switch (month) {
+                case 1, 3, 5, 7, 8, 10,12 -> {
+                    yield 31;
+                }
+                case 4,6,9,11 -> {
+                    yield 30;
+                }
+                case 2 ->{
+                    yield 28;
+                }
+                default->{
+                    yield 0;
+                }
+            };
+            setDay(day);
         }
     }
 
