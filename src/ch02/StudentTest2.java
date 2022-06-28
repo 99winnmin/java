@@ -2,13 +2,17 @@ package ch02;
 
 public class StudentTest2 {
     public static void main(String[] args) {
-        Student2 studentRyu = new Student2();
-        System.out.println(studentRyu.showStudentInfo());
+        Student3 studentRyu = new Student3(100,"lee");
+        studentRyu.setKoreaSubject("korea",100);
+        studentRyu.setMathSubject("math",90);
 
-        Student2 studentKim = new Student2(991216, "kim", 3);
-        System.out.println(studentKim.showStudentInfo());
+        Student3 studentKim = new Student3(95, "ryu");
+        studentKim.setKoreaSubject("korea",70);
+        studentKim.setMathSubject("math",100);
 
-        OrderInfo order1 = new OrderInfo("seoul");
-        System.out.println(order1.showOrderInfo(studentKim.studentName));
+//        OrderInfo order1 = new OrderInfo("seoul");
+//        System.out.println(order1.showOrderInfo(studentKim.studentName));
+        studentRyu.showScoreInfo();
+        studentKim.showScoreInfo();
     }
 }
