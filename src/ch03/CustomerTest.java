@@ -13,5 +13,6 @@ public class CustomerTest {
         customerKim.setCustomerID(648944);
         customerKim.bonusPoint = 100000;
         System.out.println(customerKim.showCustomerInfo());
+
     }
 }
