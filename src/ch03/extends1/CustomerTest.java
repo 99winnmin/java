@@ -1,4 +1,4 @@
-package ch03;
+package ch03.extends1;
 
 public class CustomerTest {
     public static void main(String[] args) {
